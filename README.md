@@ -1,18 +1,23 @@
-# Ride Access Checker
+# Eligibility Checker
 
-A simple Python script that checks whether a person meets the minimum age and height requirements to access a ride or attraction.
+A reusable Python pattern for checking whether someone meets minimum age and height requirements, shown across two examples.
+
+## Files
+- **access_checker.py** — theme park ride access requirements
+- **flight_eligibility_checker.py** — unaccompanied minor airline travel requirements
 
 ## How it works
-- Minimum age: 12 years old
-- Minimum height: 140cm
-- Both conditions must be met to be granted access
+- Checks age against a minimum requirement
+- Checks height against a minimum requirement
+- Both conditions must be met to be granted access/eligibility
 
 ## How to run
 ```bash
 python access_checker.py
+python flight_eligibility_checker.py
 ```
-You'll be prompted to enter your age and height, and the script will tell you if you're allowed in.
+You'll be prompted to enter age and height, and the script will tell you if the requirements are met.
 
 ## What I learned
 - Using `if / elif / else` for sequential condition checks
-- Handling multiple requirements where failing any one blocks access
+- Applying the same eligibility-checking pattern across different real-world contexts (entertainment, travel)
